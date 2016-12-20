@@ -1,0 +1,565 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel="stylesheet" type='text/css' />
+
+    <link rel="StyleSheet" href="./includes/menu.css" />
+    <script type="text/javascript" src="./includes/menu.js"></script>
+
+    <style type="text/css">
+        #pageWrapper {
+            font: 14px/1.4 'Oswald', sans-serif;
+            width: 1000px;
+            background-color: #FFF;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+
+        #header {
+            height: 127px;
+            width: 1000px;
+        }
+
+        #logo {
+            position: relative;
+            left: 15px;
+            top: 10px;
+        }
+
+        #blogSlogan {
+            position: relative;
+            width: 240px;
+            left: 765px;
+            top: -122px;
+        }
+
+        #searchBox {
+            position: relative;
+            left: 730px;
+            top: -100px;
+            width: 230px;
+        }
+    </style>
+
+    <title>R3lentless</title>
+
+</head>
+
+<body>
+
+    <div id="pageWrapper">
+
+        <div id="header">
+            <img src="./images/plummer.jpg" alt="Social Voice Logo" width="167px" height="109px" id="logo" />
+            <h1 id="blogTitle"></h1>
+
+            <p id="blogSlogan">
+                Lou and Wes will CLEAN any DRAIN!
+            </p>
+
+            <div id="searchBox">
+                <input type="text" name="search" size="25" />
+                <input type="submit" value="SEARCH" />
+            </div>
+
+        </div> <!-- End of header -->
+        <div id="menu"> <!-- This dropdown menu is created by using a table named "navbar". It has a default width of 1000 pixels -->
+            <table class="navbar" width="1000">
+                <tr>
+
+                    <!-- We are creating the first column in the table and assigning the css attributes assigned to "menuNormal". We are defining 		the width to be 160 pixels. We will trigger javascript functions on both the onmouseover and onmouseout events. -->
+
+                    <td class="menuNormal" onmouseover="expand(this);" onmouseout="collapse(this);">
+
+                        <!-- This is the menu item name that will appear at the top of the screen -->
+
+                        <p>Menu 1</p>
+
+                        <!-- Each drop-down menu is contained within a DIV element nested within each top-level TD element. There is a table nested 		inside of each of those div's. When a onmouseover event is triggered the div's attribute display is switched from none to 			inline, which allows a visitor to see the div on screen.-->
+
+                        <div class="menuNormal">
+                            <table class="menu">
+                                <tr>
+                                    <td class="menuNormal">
+                                        <a href="page.htm" class="menuitem">Item 1</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="menuNormal">
+                                        <a href="page.htm" class="menuitem">Item 2</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="menuNormal">
+                                        <a href="page.htm" class="menuitem">Item 3</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="menuNormal">
+                                        <a href="page.htm" class="menuitem">Item 4</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+
+                    <td class="menuNormal" onmouseover="expand(this);" onmouseout="collapse(this);">
+                        <p>Menu 2</p>
+                        <div class="menuNormal">
+                            <table class="menu">
+                                <tr>
+                                    <td class="menuNormal">
+                                        <a href="page.htm" class="menuitem">Item 1</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="menuNormal">
+                                        <a href="page.htm" class="menuitem">Item 2</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="menuNormal">
+                                        <a href="page.htm" class="menuitem">Item 3</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="menuNormal">
+                                        <a href="page.htm" class="menuitem">Item 4</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+
+                    <td class="menuNormal" onmouseover="expand(this);" onmouseout="collapse(this);">
+                        <p>Menu 3</p>
+                        <div class="menuNormal">
+                            <table class="menu">
+                                <tr>
+                                    <td class="menuNormal">
+                                        <a href="page.htm" class="menuitem">Item 1</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="menuNormal">
+                                        <a href="page.htm" class="menuitem">Item 2</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="menuNormal">
+                                        <a href="page.htm" class="menuitem">Item 3</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="menuNormal">
+                                        <a href="page.htm" class="menuitem">Item 4</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+
+                    <td class="menuNormal" onmouseover="expand(this);" onmouseout="collapse(this);">
+                        <p>Menu 4</p>
+                        <div class="menuNormal">
+                            <table class="menu">
+                                <tr>
+                                    <td class="menuNormal">
+                                        <a href="page.htm" class="menuitem">Item 1</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="menuNormal">
+                                        <a href="page.htm" class="menuitem">Item 2</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="menuNormal">
+                                        <a href="page.htm" class="menuitem">Item 3</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="menuNormal">
+                                        <a href="page.htm" class="menuitem">Item 4</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+
+                </tr>
+            </table>
+
+        </div>
+        <!-- End of menu -->
+
+        <div id="contentWrapper">
+
+            <!--    BEGINNING OF LEFT SIDE BAR -->
+
+            <div id="leftSidebar">
+                <div class="leftContainer">
+                    <div class="bannerTitle">
+                      <h4>About Me</h4>
+                    </div>
+                      <p class="sidebarExcerpt">
+                        <img src="./images/profile_picture.jpg" alt="Louis" width="73px" height="73px" id="Louis" /><br />
+                        My name is r3lentless and I enjoy creating personal projects to better my learning of IT fundamentals.
+                        <br /> <br />Here you will find a collection of my projects. I truly hope you enjoy them. Let me know if you have any ideas!
+                      </p>
+                </div> <!-- end of leftContainer -->
+
+                <!-- FIRST FEATURED ARTICLE -->
+
+                <div class="featured">
+                  <div class="bannerTitle">
+                    <h4>Fav Videos</h4>
+                  </div>
+                  <div class="eachArticle">
+
+
+                    <div class="articleTitle"><b>Video 1</b>
+                    </div>
+
+                    <p class="acticleExcerpt">
+                      This is an article Excerpt <br  />
+                      <a href="#" class="clickForMore">More</a>
+                    </p>
+
+                    <div class="horzRule">
+                    </div> <!-- End horzRule -->
+
+                  </div> <!-- End articleTitle -->
+
+                  <div class="eachArticle">
+
+
+                    <div class="articleTitle"><b>Video 2</b>
+                    </div>
+
+                    <p class="acticleExcerpt">
+                      This is an article Excerpt <br  />
+                      <a href="#" class="clickForMore">More</a>
+                    </p>
+
+                    <div class="horzRule">
+                    </div> <!-- End horzRule -->
+
+                  </div> <!-- End articleTitle -->
+                  <div class="eachArticle">
+
+
+                    <div class="articleTitle"><b>Video 3</b>
+                    </div>
+
+                    <p class="acticleExcerpt">
+                      This is an article Excerpt <br  />
+                      <a href="#" class="clickForMore">More</a>
+                    </p>
+
+                    <div class="horzRule">
+                    </div> <!-- End horzRule -->
+
+                  </div> <!-- End articleTitle -->
+                  <div class="eachArticle">
+
+
+                    <div class="articleTitle"><b>Video 4</b>
+                    </div>
+
+                    <p class="acticleExcerpt">
+                      This is an article Excerpt <br  />
+
+
+
+                      <a href="#" class="clickForMore">More</a>
+                    </p>
+
+                    <div class="horzRule">
+                    </div> <!-- End horzRule -->
+
+                  </div> <!-- End articleTitle -->
+
+                </div> <!-- End Featured -->
+
+                <!-- SECOND FEATURED ARTICLE -->
+
+                <div class="featured">
+                  <div class="bannerTitle">
+                    <h4>Fav Articles</h4>
+                  </div>
+                  <div class="eachArticle">
+
+
+                    <div class="articleTitle"><b>Article 1</b>
+                    </div>
+
+                    <p class="acticleExcerpt">
+                      This is an article Excerpt <br  />
+                      <a href="#" class="clickForMore">More</a>
+                    </p>
+
+                    <div class="horzRule">
+                    </div> <!-- End horzRule -->
+
+                  </div> <!-- End articleTitle -->
+
+                  <div class="eachArticle">
+
+
+                    <div class="articleTitle"><b>Article 2</b>
+                    </div>
+
+                    <p class="acticleExcerpt">
+                      This is an article Excerpt <br  />
+                      <a href="#" class="clickForMore">More</a>
+                    </p>
+
+                    <div class="horzRule">
+                    </div> <!-- End horzRule -->
+
+                  </div> <!-- End articleTitle -->
+                  <div class="eachArticle">
+
+
+                    <div class="articleTitle"><b>Article 3</b>
+                    </div>
+
+                    <p class="acticleExcerpt">
+                      This is an article Excerpt <br  />
+                      <a href="#" class="clickForMore">More</a>
+                    </p>
+
+                    <div class="horzRule">
+                    </div> <!-- End horzRule -->
+
+                  </div> <!-- End articleTitle -->
+                  <div class="eachArticle">
+
+
+                    <div class="articleTitle"><b>Article 4</b>
+                    </div>
+
+                    <p class="acticleExcerpt">
+                      This is an article Excerpt <br  />
+
+
+
+                      <a href="#" class="clickForMore">More</a>
+                    </p>
+
+                    <div class="horzRule">
+                    </div> <!-- End horzRule -->
+
+                  </div> <!-- End articleTitle -->
+
+                </div> <!-- End Featured -->
+
+            </div><!-- End leftSidebar -->
+
+            <!-- BEGINNING OF MIDDLE BAR 1 -->
+
+            <div class="middleColumn">
+
+              <div class="middleContainer">
+
+                  <div class="middleTitle">
+                    <h4>ARTICLE</h4>
+                  </div>
+                  <img src="./images/dragon.png" alt="Featured Image" width="260px" height="142px" class="featuredImage" />
+                  <div class="middleArtTitle">
+                    <b>FACEBOOK MARKETING</b>
+                  </div>
+                  <div class="middleArtDate">
+                    <b>SEPT 8, 2011</b>
+                  </div>
+                  <div class="horzMidRule">
+
+                  </div>
+                  <p class="middleExcerpt">
+                    Some information about the article. <a href="#" class="clickForMore">More</a>
+                  </p>
+
+              </div> <!--End middleContainer-->
+
+              <div class="middleContainer">
+
+                  <div class="middleTitle">
+                    <h4>ARTICLE</h4>
+                  </div>
+                  <img src="./images/dragon.png" alt="Featured Image" width="260px" height="142px" class="featuredImage" />
+                  <div class="middleArtTitle">
+                    <b>FACEBOOK MARKETING</b>
+                  </div>
+                  <div class="middleArtDate">
+                    <b>SEPT 8, 2011</b>
+                  </div>
+                  <div class="horzMidRule">
+
+                  </div>
+                  <p class="middleExcerpt">
+                    Some information about the article. <a href="#" class="clickForMore">More</a>
+                  </p>
+
+              </div> <!--End middleContainer-->
+
+              <div class="middleContainer">
+
+                  <div class="middleTitle">
+                    <h4>ARTICLE</h4>
+                  </div>
+                  <img src="./images/dragon.png" alt="Featured Image" width="260px" height="142px" class="featuredImage" />
+                  <div class="middleArtTitle">
+                    <b>FACEBOOK MARKETING</b>
+                  </div>
+                  <div class="middleArtDate">
+                    <b>SEPT 8, 2011</b>
+                  </div>
+                  <div class="horzMidRule">
+
+                  </div>
+                  <p class="middleExcerpt">
+                    Some information about the article. <a href="#" class="clickForMore">More</a>
+                  </p>
+
+              </div> <!--End middleContainer-->
+
+            </div> <!-- End of middleColumn -->
+
+            <div class="middleColumn">
+
+              <div class="middleContainer">
+
+                  <div class="middleTitle">
+                    <h4>ARTICLE</h4>
+                  </div>
+                  <img src="./images/dragon.png" alt="Featured Image" width="260px" height="142px" class="featuredImage" />
+                  <div class="middleArtTitle">
+                    <b>FACEBOOK MARKETING</b>
+                  </div>
+                  <div class="middleArtDate">
+                    <b>SEPT 8, 2011</b>
+                  </div>
+                  <div class="horzMidRule">
+
+                  </div>
+                  <p class="middleExcerpt">
+                    Some information about the article. <a href="#" class="clickForMore">More</a>
+                  </p>
+
+              </div> <!--End middleContainer-->
+
+              <div class="middleContainer">
+
+                  <div class="middleTitle">
+                    <h4>ARTICLE</h4>
+                  </div>
+                  <img src="./images/dragon.png" alt="Featured Image" width="260px" height="142px" class="featuredImage" />
+                  <div class="middleArtTitle">
+                    <b>FACEBOOK MARKETING</b>
+                  </div>
+                  <div class="middleArtDate">
+                    <b>SEPT 8, 2011</b>
+                  </div>
+                  <div class="horzMidRule">
+
+                  </div>
+                  <p class="middleExcerpt">
+                    Some information about the article. <a href="#" class="clickForMore">More</a>
+                  </p>
+
+              </div> <!--End middleContainer-->
+
+              <div class="middleContainer">
+
+                  <div class="middleTitle">
+                    <h4>ARTICLE</h4>
+                  </div>
+                  <img src="./images/dragon.png" alt="Featured Image" width="260px" height="142px" class="featuredImage" />
+                  <div class="middleArtTitle">
+                    <b>FACEBOOK MARKETING</b>
+                  </div>
+                  <div class="middleArtDate">
+                    <b>SEPT 8, 2011</b>
+                  </div>
+                  <div class="horzMidRule">
+
+                  </div>
+                  <p class="middleExcerpt">
+                    Some information about the article. <a href="#" class="clickForMore">More</a>
+                  </p>
+
+              </div> <!--End middleContainer-->
+
+            </div> <!-- End of middleColumn -->
+
+            <!-- BEGINNING OF RIGHTSIDEBAR -->
+
+            <div id="rightSideBar">
+
+              <div class="rightContainer">
+
+                <div class="bannerTitle">
+                  <h4>FREE EBOOK</h4>
+                </div>
+                <p id="eBookForm">
+                  <b>EMAIL</b><br />
+                  <input type="text" name="email" size="20 "value=""/><br />
+                  <b>Name</b><br />
+                  <input type="text" name="name" size="20 "value=""/><br />
+                  <input type="submit" name="" value="submit" />
+                  <p class="eBookExcerpt">This is some information about the free ebook.</p>
+                </p>
+
+              </div>
+
+              <div class="socialIcons">
+                <img src="./images/rss.gif" alt="RSS Feed" width="40px" height="40px" class="socialNetwork" />
+                <img src="./images/facebook.png" alt="Facebook" width="40px" height="40px" class="socialNetwork" />
+                <img src="./images/twitter.gif" alt="Twitter" width="40px" height="40px" class="socialNetwork" />
+                <img src="./images/linkedin.png" alt="LinkedIn" width="40px" height="40px" class="socialNetwork" />
+              </div> <!-- End of socialIcons -->
+
+              <div class="affiliateContainer">
+                <div class="bannerTitle">
+                  <h4>AFFILIATES</h4>
+                </div>
+              </div><!-- End of affiliateContainer -->
+
+              <div class="affiliateContainer">
+                <div class="bannerTitle">
+                  <h4>AFFILIATES</h4>
+                </div>
+              </div><!-- End of affiliateContainer -->
+
+              <div class="affiliateContainer">
+                <div class="bannerTitle">
+                  <h4>AFFILIATES</h4>
+                </div>
+              </div><!-- End of affiliateContainer -->
+
+              <div class="affiliateContainer">
+                <div class="bannerTitle">
+                  <h4>AFFILIATES</h4>
+                </div>
+              </div><!-- End of affiliateContainer -->
+
+
+            </div><!-- End of rightSideBar -->
+
+            </div><!-- End of contentWrapper -->
+
+            <div id="footer">
+              &copy; 2016 All Rights Reserved
+            </div>
+
+    </div><!-- end pageWrapper -->
+
+
+</body>
+
+</html>
